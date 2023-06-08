@@ -23,6 +23,7 @@
             android:layout_marginTop="20dp"
             android:text="CADASTRO DE VAGAS"
             android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textSize="20sp" />
 
         <EditText
@@ -31,31 +32,48 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="Empresa/GRUPO"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
             android:id="@+id/edCargo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:layout_marginTop="20dp"
-            android:hint="Cargo" />
+            android:ems="10"
+            android:hint="Cargo"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
             android:id="@+id/edSalario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:layout_marginTop="20dp"
-            android:hint="Salário" />
+            android:ems="10"
+            android:hint="Salário"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
             android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="match_parent"
             android:layout_height="109dp"
             android:layout_marginTop="20dp"
-            android:text="CADASTRO" />
+            android:background="#E10A0A"
+            android:backgroundTint="#E80C0C"
+            android:backgroundTintMode="src_over"
+            android:text="CADASTRO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:iconTint="#A51919"
+            app:rippleColor="#E11111"
+            app:strokeColor="#BA1313" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vaga" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
